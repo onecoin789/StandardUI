@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text_sub1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcom Back"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/text_sub2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/string_sub"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@+id/text_sub1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="35dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/edit_sub"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_sub2" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:hint="Password"
+        android:minHeight="48dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf=""
+        app:layout_constraintStart_toStartOf="0"
+        app:layout_constraintTop_toBottomOf="@+id/edit1" />
+
+    <TextView
+        android:id="@+id/text_sub3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:text="Forgot Password ?"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit2"
+        tools:ignore="TextSizeCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sub1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/btn_radius_pink_nostroke"
+        android:text="Sign in"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_sub3"
+        app:layout_constraintBottom_toTopOf="@+id/text_sub4" />
+
+    <TextView
+        android:id="@+id/text_sub4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Or Sign up With"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sub1"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_pink_bar_left"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/text_sub4"
+        app:layout_constraintTop_toTopOf="@+id/text_sub4"
+        app:layout_constraintBottom_toBottomOf="@+id/text_sub4" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_pick_bar_right"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toEndOf="@id/text_sub4"
+        app:layout_constraintTop_toTopOf="@+id/text_sub4"
+        app:layout_constraintBottom_toBottomOf="@+id/text_sub4" />
+
+    <ImageView
+        android:id="@+id/btn_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/google_logo"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_f"
+        app:layout_constraintTop_toTopOf="@id/btn_f"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_f"/>
+
+    <ImageView
+        android:id="@+id/btn_f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/facebook_logo"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/text_sub4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/apple_logo"
+        android:layout_marginStart="30dp"
+        app:layout_constraintStart_toEndOf="@id/btn_f"
+        app:layout_constraintTop_toTopOf="@id/btn_f"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_f"/>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

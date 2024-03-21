@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UI</string>
+    <string name="string_main">
+        Lorem ipsum dolor sot amet, consectrtur adipiscing elit.\n
+        Diam maecenas mi non sed ut odio. Non,justo,sed facilisi\n
+        et.Eget viverra urna, vestibulum egestas faucibus\n
+        egestas. Sagittis nam velit volutpat eu nunc.
+    </string>
+    <string name="string_sub">
+        Lorem ipsum dolor sit amet,consectetur adipiscing\n
+        elit. Diam maecenas mi non sed ut odio. Non,justo,\n
+        sed facilisi et.
+    </string>
+    <string name="edit_sub">
+        Username, Email &amp; Phone Number
+    </string>
+</resources>
